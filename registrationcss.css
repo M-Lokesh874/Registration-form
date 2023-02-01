@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    max-width: 525px;
+    box-shadow: 1px 2px 20px;
+    background: white;
+}
+
+span {
+    font-size: x-small;
+    color: red;
+}
+
+.container .title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #fec107;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container .form .input_field {
+    margin-bottom: 11.5px;
+    /* display: flex; */
+    align-items: center;
+    display: block;
+}
+
+.aaaa {
+    width: 100%;
+}
+
+.container .form .input_field label {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.container .form .input_field .input,
+.container .form .input_field .textarea {
+    width: 100%;
+    outline-color: white;
+}
+
+.container .form .input_field textarea {
+    resize: none;
+    height: 125px;
+    /* border: 1px solid black; */
+}
+
+.container .form .input_field .custom_select {
+    width: 103%;
+}
+
+.container .form .input_field .custom_select select {
+    width: 100%;
+    padding: 2.5px;
+}
+
+.container .form .input_field .check {
+    width: 20px;
+}
+
+.container .form .input_field .btn {
+    width: 100%;
+    padding: 1px;
+    font-size: 15px;
+    background: #fec107;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+
+}
+
+.container .form .input_field .btn:hover {
+    background: #ffd658;
+}
+
+.container .form .input_field .input:focus,
+.container .form .input_field .textarea:focus {
+    box-shadow: 2px 2px 20px black;
+}

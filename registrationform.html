@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-form</title>
+    <link rel="stylesheet" href="registrationcss.css">
+    <script src="formjs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            Registration-form
+        </div>
+        <form class="registration_form" onsubmit="return formValidation()">
+            <div class="form">
+                <div class="input_field">
+                    <label for="firstname">First name:</label>
+                    <input type="text" class="input" id="firstname" onkeyup="firstName()">
+                    <span id="firstname_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" class="input" id="lastname" onkeyup="lastName()">
+                    <span id="lastname_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="password">Password:</label>
+                    <input type="password" class="input" id="password" onkeyup="formValidation()">
+                    <span id="password_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="conform_password">Confirm password:</label>
+                    <input type="text" class="input" id="conform_password" onkeyup="formValidation()">
+                    <span id="confirm_password_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="gender">Gender:</label>
+                    <div class="custom_select">
+                        <select id="gender">
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <label for="email">Email:</label>
+                    <input type="text" class="input" id="email" onkeyup="mail()">
+                    <span id="email_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="number">Phone number:</label>
+                    <input type="text" class="input" id="mobile" onkeyup="phoneNumber()">
+                    <span id="mobile_error"></span>
+                </div>
+                <div class="input_field">
+                    <label for="address">Address:</label>
+                    <textarea class="textarea" id="address" onkeyup="addressValidation()"></textarea >
+                    <span id="address_error"></span>
+                </div>
+                <div class="input_field terms">
+                    <label for="terms" class="check">
+                        <input type="checkbox">
+                    </label>
+                    <!-- <div id="paragraph"></div> -->
+                    <p>Agree to terms and conditions</p>
+                    
+                </div>
+                <div class="input_field">
+                    <input type="reset" value="Clear-form" class="btn">
+                </div>
+                <div class="input_field">
+                    <input type="submit" value="Register" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
