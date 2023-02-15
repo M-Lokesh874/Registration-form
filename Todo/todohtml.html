@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/Todo/todocss.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="section-1">
+                <span class="material-symbols-outlined">
+                    apps
+                </span>
+                <span class="span-sec-2">
+                    To Do
+                </span>
+            </div>
+            <div class="section-2">
+                <form action="" id="searchForm" class="form">
+                    <input type="text" id="search" title="Enter tasks to search" class="searchbox" name="search"
+                        placeholder="Search tasks...">
+                </form>
+            </div>
+            <div class="section-3">
+                <div class="section-3-icons">
+                    <span class="material-symbols-outlined">settings</span>
+                    <span class="material-symbols-outlined">
+                        question_mark
+                    </span>
+                    <span class="material-symbols-outlined">
+                        campaign
+                    </span>
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+
+            <div class="left">
+                <div class="menu">
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            light_mode
+                        </span>
+                        <span>
+                            My Days
+                        </span>
+                    </div>
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span>
+                            Important
+                        </span>
+                    </div>
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            event_note
+                        </span>
+                        <span>Planned</span>
+                    </div>
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            person_filled
+                        </span>
+                        <span>
+                            Assigned to me
+                        </span>
+                    </div>
+                    <div class="left-div">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <span class="task">
+                            Tasks
+                        </span>
+                    </div>
+
+
+                    <div class="left-middlediv">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                        <span>
+                            New List
+                        </span>
+                        <span class="add-list">
+                            <span class="material-symbols-outlined">
+                                playlist_add
+                            </span>
+                        </span>
+                    </div>
+
+
+                    <div class="left-lastdiv">
+                        <span class="material-symbols-outlined last">
+                            mail
+                        </span>
+
+                        <span class="material-symbols-outlined last">
+                            calendar_month
+                        </span>
+
+                        <span class="material-symbols-outlined last">
+                            group
+                        </span>
+
+                        <span class="material-symbols-outlined last">
+                            attach_file
+                        </span>
+
+                        <span class="material-symbols-outlined last">
+                            done_all
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="task-head">
+                    <div class="home-icon">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                    </div>
+                    <div class="home-icon">
+                        <span class="task">
+                            Tasks
+                        </span>
+                    </div>
+                    <div class="home-icon">
+                        <span class="material-symbols-outlined">
+                            more_horiz
+                        </span>
+                    </div>
+                    <div class="last">
+                        <div class="swap-icon">
+                            <span class="material-symbols-outlined">
+                                swap_vert
+                            </span>
+                        </div>
+                        <div class="last-icon">
+                            Sort
+                        </div>
+                    </div>
+                </div>
+                <div class="add-task-section">
+                    <form action="" id="taskform">
+                        <div class="task-section" id="flip">
+
+                            <span class="material-symbols-outlined">
+                                radio_button_unchecked
+                            </span>
+                            <span class="user-input">
+                                <input type="search" id="addtask" title="Enter tasks to add" class="addtask"
+                                    placeholder="add tasks...">
+                            </span>
+                        </div>
+                        <div class="submit-section" id="panel">
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+                            <span class="material-symbols-outlined">
+                                notifications
+                            </span>
+                            <span class="material-symbols-outlined">
+                                repeat
+                            </span>
+                            <span class="add-button">
+                                <button type="submit" class="button">Add</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+
+                <ul id="tasks" class="tasks"></ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/Todo/todojs.js"></script>
+</body>
+
+</html>
